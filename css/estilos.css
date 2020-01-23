@@ -218,8 +218,8 @@ figure {
   margin-left: 20px;
 }
 .event { 
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -323,6 +323,11 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
+.container-title {
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
 
 @media screen and (max-width: 767px) {
   
@@ -377,6 +382,19 @@ figure {
   .project-description {
     font-size: .8em;
 
+  }
+  .event {
+    width: 98%;
+  }
+  .event img {
+    width: 98%;
+    border-radius: 10px;
+  }
+  .event-list {
+    margin: 20px;
+  }
+  .event-detail {
+    padding: 1em;
   }
 }
 @media screen and (max-width: 480px) {
