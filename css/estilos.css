@@ -122,11 +122,15 @@ h2 {
 
 
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
+}
+
+.project-image {
+  width: 100%;
 }
 
 .header {
@@ -342,10 +346,46 @@ figure {
   .header ol li {
     height: 50px;
   }
-}
-@media screen and (max-width: 767px) {
+  .project {
+    flex-direction: column;
+  }
+  .project-details {
+    width: auto;
+    font-size: 16px;
+  }
+  .project-course, .project-date, .project-url, .project-description {
+    margin: .4em 0  ;
+  }
+  .project-imageContainer {
+    width: 70%;  
+  }
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+  .project-course {
+    font-size: 1.2em;
 
-}
-@media screen and (max-width: 767px) {
+  }
+  .project-date {
+    font-size: 1em;
 
+  }
+  .project-url {
+    font-size: 1em;
+  }
+  .project-description {
+    font-size: .8em;
+
+  }
+}
+@media screen and (max-width: 480px) {
+  .project-details {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .project-details {
+    font-size: 10px;
+  }
 }
