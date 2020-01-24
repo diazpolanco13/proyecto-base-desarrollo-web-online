@@ -200,6 +200,7 @@ figure {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 15px;
 }
 
 .footer img {
@@ -258,8 +259,11 @@ figure {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  
 }
-
+.contact .container {
+  padding: 0px 20px 0px 20px;
+}
 .social {
 }
 
@@ -396,10 +400,32 @@ figure {
   .event-detail {
     padding: 1em;
   }
+  .footer .container {
+    padding: 0px 15px;
+  }
+  .footer {
+    border: 1px solid transparent;
+  }
 }
 @media screen and (max-width: 480px) {
   .project-details {
     font-size: 12px;
+  }
+  .contact {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+  }
+  .form-email {
+    text-align: center;
+  }
+  .form-email button {
+    margin: 1em auto;   
+  }
+  .footer .container {
+    display: block;
+    text-align: center;
   }
 }
 @media screen and (max-width: 375px) {
