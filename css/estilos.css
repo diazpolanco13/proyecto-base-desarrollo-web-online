@@ -76,9 +76,13 @@ h2 {
   flex-wrap: wrap;
 
 }
-
+.hero h1 {
+  width: 50%;
+}
 .hero-image{
   object-fit: cover;
+  width: 50%;
+  overflow: hidden;
 }
 
 
@@ -355,6 +359,25 @@ figure {
   .header ol li {
     height: 50px;
   }
+  .hero {
+    position: relative;
+
+  }
+  .hero h1 {
+    position: absolute;
+    font-size: 2em;
+    z-index: 4;
+    width: 100%;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
   .project {
     flex-direction: column;
   }
@@ -426,6 +449,10 @@ figure {
   .footer .container {
     display: block;
     text-align: center;
+  }
+  .hero h1 {
+    width: 100%;
+
   }
 }
 @media screen and (max-width: 375px) {
