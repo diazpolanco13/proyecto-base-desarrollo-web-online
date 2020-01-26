@@ -6,9 +6,11 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
+    <i class="icon-menu burger-bottom" id="burger-menu"></i> <!-- boton de menu -->
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -88,6 +90,7 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
+            <!-- <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/rQwFzNi4TtI?start=72" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             <img class="event-image" src="images/platzi-conf.jpg" width="500" />
           </figure>
           <div class="event-detail">
@@ -145,5 +148,23 @@
         </div>
       </div>
     </footer>
+    <script>
+
+      console.log(window.matchMedia('screen and (max-width: 767px)'));
+
+
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu')
+        const portfolio = document.querySelector('#portafolio')
+        burgerButton.addEventListener('click', hideShow);
+
+        function hideShow() {
+          if (menu.classList.contains('is-active')) {
+            menu.classList.remove('is-active');
+          } else {
+            menu.classList.add('is-active');
+          }
+        }
+    </script>
   </body>
 </html>

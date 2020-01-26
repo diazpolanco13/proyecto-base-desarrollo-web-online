@@ -268,8 +268,6 @@ figure {
 .contact .container {
   padding: 0px 20px 0px 20px;
 }
-.social {
-}
 
 .social-link {
   display: inline-block;
@@ -337,6 +335,27 @@ figure {
 
 }
 
+.burger-bottom {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .6);
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 6;
+  left: 5px;
+  top: 5px;
+  color: white;
+  display: none;
+}
+
+/* -----------------------------------------------------------------------
+RESPONSIVE DESING
+--------------------------------------------------------------------------- */
+
+
+
 @media screen and (max-width: 767px) {
   
 }
@@ -344,6 +363,10 @@ figure {
 
 }
 @media screen and (max-width: 767px) {
+  .burger-bottom {
+    display: block;
+    cursor: pointer;
+  }
   .header {
     display: block;
     height: auto;
@@ -355,9 +378,32 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .header ol li {
     height: 50px;
+  }
+  .header a {
+    font-size: 2em;
+    margin-bottom: .5em ;
+
+  }
+  .menu {
+    position: fixed;
+    background-color: #026fffe0;
+    z-index: 5;
+    top: 0;
+    left: -100vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .9s;
+  }
+
+  .menu.is-active {
+    left: 0;
   }
   .hero {
     position: relative;
@@ -428,6 +474,21 @@ figure {
   }
   .footer {
     border: 1px solid transparent;
+  }
+  .event-imageContainer {
+    /* position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; */
+  }
+  .youtube-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 480px) {
